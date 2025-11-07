@@ -3,33 +3,33 @@
 namespace vaja6 {
 
   
-    public enum Poklic { Bojevnik, Carovnik, Menih, Tat, Lovec, Duhoven };
+ public enum Poklic { Bojevnik, Carovnik, Menih, Tat, Lovec, Duhoven };
 
   public int x = 666;
 
 	// Se en komentar
     class Igralec {
-        public int id;
-        public string u_ime;
-        public string u_geslo;
-        public static int stIg = 1;
+        private int id;
+        private string u_ime;
+        private string u_geslo;
+        private static int stIg = 1;
 		//privzeti konstruktor
 
-        public Igralec() {
+        private Igralec() {
             u_ime = "";
             u_geslo = "";
             id = stIg;
             stIg++;
         }
-		/
-        public int Id {
+		
+        private int Id {
             get
             {
                 return id;
             }
         }
 
-        public string U_ime {
+        private string U_ime {
             get
             {
                 return u_ime;
@@ -40,7 +40,7 @@ namespace vaja6 {
             }
         }
 		//geslo
-        public string U_geslo
+        private string U_geslo
         {
             get
             {
@@ -52,13 +52,13 @@ namespace vaja6 {
             }
         }
 		//nekinekineki
-        public static int StIg
+        private static int StIg
         {
             get { return stIg; }
         }
     }
     class vaja { 
-        public static void main(String[] args)
+        private static void main(String[] args)
         {
 
         }
